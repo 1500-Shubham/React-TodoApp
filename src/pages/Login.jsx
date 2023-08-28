@@ -9,7 +9,7 @@ import { Context } from '../main';
 export const Login = () => {
 
   const {isAuthenticated,setIsAuthenticated,loading,setLoading}=useContext(Context);
-  const[email,setEmail]=useState("");
+    const[email,setEmail]=useState("");
     const[password,setPassword]=useState("");
   if(isAuthenticated) return <Navigate to={"/"}/>
   const submitFunction= async (e)=>{
